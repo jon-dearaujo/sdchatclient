@@ -1,8 +1,5 @@
 package client.gui;
 
-import java.awt.BorderLayout;
-import java.awt.HeadlessException;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -20,23 +17,10 @@ public class ClientFrame extends JFrame
 	
 	public ClientFrame() 
 	{
-		basicConfiguration();
-		layoutConfiguration();
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setResizable(true);
+		this.setSize(FRAME_WIDTH, FRAME_HEIGHT);
 		setVisible(true);
-	}
-
-
-	private void basicConfiguration()
-	{
-		setTitle("Chat Client");
-		setSize(ClientFrame.FRAME_WIDTH, ClientFrame.FRAME_HEIGHT);
-		setLocationRelativeTo(null);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setResizable(false);
-	}
-	
-	private void layoutConfiguration()
-	{
-		messagesOutputArea = new JTextArea(FRAME_WIDTH - FRAME_INTERNAL_BORDER, FRAME_HEIGHT - FRAME_INTERNAL_BORDER);
 	}
 }

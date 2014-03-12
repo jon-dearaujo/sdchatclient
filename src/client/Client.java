@@ -11,7 +11,7 @@ import client.exceptions.ConnectionFailException;
 public class Client implements Runnable
 {
 	private static final int SERVER_PORT = 2031;
-	private static final String SERVER_ADDRESS = "192.168.0.175";
+	private static final String SERVER_ADDRESS = "192.168.101.144";
 	
 	private Socket socket;
 	private BufferedReader reader;

@@ -1,4 +1,4 @@
 sdchatclient
 ============
 
-A java chat client socket based. With simple swing GUI
+A socket based java chat client. Made with simple swing GUI
